@@ -1,0 +1,25 @@
+@use "../presents/" as *;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-primary;
+  font-size: $font-size;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  min-width: 100%;
+  margin: 0 auto;
+  padding-left: $gap;
+  padding-right: $gap;
+}

@@ -1,0 +1,43 @@
+@use "../../presents/" as *;
+
+.main {
+  padding-top: 75px;
+  &__slider {
+  }
+  &__slider{
+    &-item {
+    }
+    &-img {
+      width: 100%;
+      height: calc(100vh - 79px);
+      object-fit: cover;
+
+    }
+  }
+  &__bestsellers, &__topsale {
+    padding-top: $gap-md;
+    &-title {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 800;
+      padding-bottom: $gap-md;
+    }
+    &-items {
+      display: grid;
+      column-gap: $gap;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 999;
+}
+.slick-next {
+  right: 25px;
+  z-index: 999;
+}
+.slick-dots {
+  bottom: 25px;
+}
