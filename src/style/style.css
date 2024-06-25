@@ -475,6 +475,9 @@ a {
   color: #74c0fc;
   transition: all 0.5s;
 }
+.header__nav-action.fade-out {
+  opacity: 0;
+}
 .header__actions-wrap {
   display: flex;
   gap: 40px;
@@ -508,19 +511,20 @@ a {
   height: calc(100vh - 79px);
   object-fit: cover;
 }
-.main__bestsellers, .main__topsale {
+.main__bestsellers, .main__topsale, .main__accessories {
   padding-top: 40px;
 }
-.main__bestsellers-title, .main__topsale-title {
+.main__bestsellers-title, .main__topsale-title, .main__accessories-title {
   font-size: 3rem;
   text-align: center;
   font-weight: 800;
   padding-bottom: 40px;
 }
-.main__bestsellers-items, .main__topsale-items {
+.main__bestsellers-items, .main__topsale-items, .main__accessories-items {
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
 }
 
 .slick-prev {
@@ -537,7 +541,7 @@ a {
   bottom: 25px;
 }
 
-.bestseller, .topsale {
+.bestseller, .topsale, .accessory {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -550,14 +554,14 @@ a {
   padding-top: 20px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
-.bestseller:hover, .topsale:hover {
+.bestseller:hover, .topsale:hover, .accessory:hover {
   opacity: 0.85;
   transition: all 0.6s;
 }
-.bestseller__img, .topsale__img {
+.bestseller__img, .topsale__img, .accessory__img {
   max-width: 100%;
 }
-.bestseller__btn, .topsale__btn {
+.bestseller__btn, .topsale__btn, .accessory__btn {
   padding: 1em;
   border: none;
   background-color: #000000;
@@ -565,7 +569,7 @@ a {
   cursor: pointer;
   transition: all 0.6s;
 }
-.bestseller__btn:hover, .topsale__btn:hover {
+.bestseller__btn:hover, .topsale__btn:hover, .accessory__btn:hover {
   background-color: #fff;
   color: #000000;
   transition: all 0.6s;

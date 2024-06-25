@@ -1,13 +1,15 @@
 import MainBestSellers from "../sections/main/Main-bestsellers";
 import MainSlider from "../sections/main/Main-slider";
-import TopSale from "../sections/main/Main-topsale";
+import MainTopSale from "../sections/main/Main-topsale";
+import MainAccessories from "../sections/main/Main-accessories";
 
 const HomePage = () => {
   return (
     <main className="main">
       <MainSlider />
       <MainBestSellers />
-      <TopSale />
+      <MainTopSale />
+      <MainAccessories />
     </main>
   );
 };

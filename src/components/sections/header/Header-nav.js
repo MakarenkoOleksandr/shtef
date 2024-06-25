@@ -1,17 +1,21 @@
 import { NavLink } from "react-router-dom";
+import useGetData from "../../api/UseGetData";
 
-const HeaderNav = () => {
+const HeaderNav = ({ language, fade }) => {
+  const navBtns = useGetData("/api/getNav/", language);
+
   return (
     <nav className="header__nav">
-      <NavLink className="header__nav-action" to="/about">
-        About
-      </NavLink>
-      <NavLink className="header__nav-action" to="/contacts">
-        Contacts
-      </NavLink>
-      <NavLink className="header__nav-action" to="/contacts">
-        Categories
-      </NavLink>
+      {navBtns &&
+        navBtns.map((el, idx) => (
+          <NavLink
+            key={idx}
+            className={`header__nav-action ${fade ? "fade-out" : ""}`}
+            to={`/${el.toLowerCase()}`}
+          >
+            {el}
+          </NavLink>
+        ))}
     </nav>
   );
 };

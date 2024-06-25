@@ -14,7 +14,7 @@
 
     }
   }
-  &__bestsellers, &__topsale {
+  &__bestsellers, &__topsale, &__accessories {
     padding-top: $gap-md;
     &-title {
       font-size: 3rem;
@@ -26,6 +26,7 @@
       display: grid;
       column-gap: $gap;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      align-items: center;
     }
   }
 }

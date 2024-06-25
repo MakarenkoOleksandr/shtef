@@ -38,6 +38,9 @@
         color: $hover-color-blue;
         transition: all .5s;
       }
+      &.fade-out {
+        opacity: 0;
+      }
     }
   }
   &__actions-wrap {
