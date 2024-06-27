@@ -50,7 +50,6 @@ python-dateutil==2.8.2
 pytz==2023.3.post1
 pytzdata==2020.1
 pyunormalize==15.1.0
-pywin32==306
 pywin32-ctypes==0.2.2
 redis==5.0.1
 referencing==0.32.1
