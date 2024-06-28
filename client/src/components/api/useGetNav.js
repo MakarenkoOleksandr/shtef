@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useGetData = (api, lang) => {
+const useGetNav = (api, lang) => {
   const [nav, getNav] = useState();
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const useGetData = (api, lang) => {
   return nav;
 };
 
-export default useGetData;
+export default useGetNav;
