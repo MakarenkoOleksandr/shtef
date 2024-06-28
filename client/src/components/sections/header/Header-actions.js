@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 import ua from "../../../img/ua.gif";
 import pl from "../../../img/pl.gif";
 

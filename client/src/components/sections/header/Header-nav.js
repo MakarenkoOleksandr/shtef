@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
 import useGetNav from "../../api/useGetNav";
+import { URL } from "../../../config";
 
 const HeaderNav = ({ language, fade }) => {
-  const navBtns = useGetNav("/api/getNav", language);
+  const navBtns = useGetNav(`${URL}/api/getNav`, language);
 
   return (
     <nav className="header__nav">
