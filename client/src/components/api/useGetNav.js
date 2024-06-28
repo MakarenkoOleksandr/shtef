@@ -8,7 +8,6 @@ const useGetNav = (api, lang) => {
       try {
         const response = await fetch(api);
         const data = await response.json();
-        console.log(data);
 
         getNav(data.map((item) => (lang === "UA" ? item.ua : item.pl)));
       } catch (error) {
