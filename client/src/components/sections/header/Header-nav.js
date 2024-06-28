@@ -2,7 +2,10 @@ import { NavLink } from "react-router-dom";
 import useGetNav from "../../api/useGetNav";
 
 const HeaderNav = ({ language, fade }) => {
-  const navBtns = useGetNav("/api/getNav", language);
+  const navBtns = useGetNav(
+    "https://shnyrki-552c68a5b166.herokuapp.com/api/getNav",
+    language
+  );
 
   return (
     <nav className="header__nav">
