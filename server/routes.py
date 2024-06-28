@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, current_app
+from flask import Blueprint, jsonify, render_template
 from models import Navigation
 
 api_bp = Blueprint('api', __name__)
@@ -11,3 +11,8 @@ def get_navigation():
         return jsonify([navigation.to_dict() for navigation in navigations])
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route('/')
+def index():
+    return render_template('index.html')
